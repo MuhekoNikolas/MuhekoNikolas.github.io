@@ -71,7 +71,7 @@ function runStartUpFunctions(){
   changeExperienceAboutText()
   changeProjectsAboutText()
 
-  showExperienceContainer()
+  //showExperienceContainer()
   
 
   /*/
