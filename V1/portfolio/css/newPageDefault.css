@@ -1,0 +1,366 @@
+
+
+:root{
+
+  --device: "default";
+  --pfpImageUrl: url("https://images-ext-1.discordapp.net/external/5E1X1NyA8jy7WDK4YNAifF7S39mY3yni3Y0BzhAY5lg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/564452749425639483/499dba7f4169ec65c13b5af6f5c524f0.webp");
+  --darkModeBackground: #1c1c1c;
+  --darkModeOppositeBackground: #E1D9D1;
+  --darkTextColor: white;
+  --navBarColor: #0042aa;
+  --navBarColor: rgb(113,126,255);
+  --sectionPfpOpacity:0.5;
+  
+  
+  
+}
+
+
+*{
+  transition:top 1s ease-in-out;
+  scroll-behavior:smooth;
+  transition: left 2s ease-in-out;
+  transition: right 2s ease-in-out;
+  transition: top 2s ease-in-out;
+  transition: bottom 2s ease-in-out;
+}
+
+
+
+h1{
+  font-family:monospace, monospace;
+  color:white;
+  font-size:5rem;
+}
+
+p{
+  font-family:monospace, monospace;
+  color:black;
+  font-size:3rem;
+}
+
+button:hover{
+  cursor:pointer;
+}
+
+
+
+#mainContainer{
+  position:fixed;
+  top:0px;
+  left:0px;
+  
+  width:100vw;
+  height:100vh;
+
+  background:var(--darkModeBackground);
+  
+}
+
+
+canvas {
+  position:relative;
+  top:250px;
+  left:0px;
+  z-index:9000;
+}
+
+#homeCanvas{
+
+}
+
+#projectsCanvas{
+}
+
+#experienceCanvas{
+}
+
+#contactsCanvas{
+}
+
+
+
+
+#homeContainer{
+  position:fixed;
+  top:200px;
+  left:0px;
+  
+  width:100vw;
+  height:100vh;
+
+  overflow:hidden;
+  overflow-y:auto; 
+  
+  background:var(--darkModeBackground);
+  
+  display:block;
+  
+}
+
+
+#projectsContainer{
+  position:fixed;
+  top:200px;
+  left:0px;
+  
+  width:100vw;
+  height:100vh;
+
+  
+  overflow:hidden;
+  overflow-y:auto; 
+
+  background:var(--darkModeBackground);
+
+  display:none;
+  
+}
+
+
+#experienceContainer{
+  position:fixed;
+  top:200px;
+  left:0px;
+  
+  width:100vw;
+  height:100vh;
+
+  overflow:hidden;
+  overflow-y:auto; 
+
+  background:var(--darkModeBackground);
+
+  display:none;
+  
+}
+
+
+#contactsContainer{
+  position:fixed;
+  top:200px;
+  left:0px;
+  
+  width:100vw;
+  height:100vh;
+
+  overflow:hidden;
+  overflow-y:auto; 
+
+  background:var(--darkModeBackground);
+
+  display:none;
+  
+}
+
+
+
+#footerDiv{
+  position:relative;
+  top:20px;
+  
+  
+  width:100vw;
+  height:600px;
+
+  display:none;
+
+  background:white;
+}
+
+
+#navBar{
+  position:fixed;
+  top:0px;
+  left:0px;
+
+  
+  width:100vw;
+  height:200px;
+
+  background:white;
+  z-index:200;
+
+  
+  
+}
+
+
+#navMenu{
+
+  position:fixed;
+  top:-200vh;
+  
+  left:0px;
+
+  border-top:100px solid var(--navBarColor);
+
+  
+  width:100vw;
+  height:100vh;
+
+  background:var(--navBarColor);
+  z-index:150;
+}
+
+
+#navMenuSettingsDiv{
+  position:relative;
+  top:100px;
+  
+  width:100%;
+  height:200px;
+
+  background:white;
+}
+
+
+.navMenuSettingsDivButtons{
+  position:relative;
+
+  display:block;
+  margin:auto;
+
+  border:none;
+  
+  width:100px;
+  height:100%;
+
+  background:none;
+
+  
+}
+
+.navMenuSettingsDivButtons h1{
+  color:blue;
+}
+
+
+.navMenuButtons{
+  position:relative;
+  margin-top:20px;
+  left:5%;
+
+  text-align:center;
+  
+  width:90%;
+  height:10%;
+
+  background:linear-gradient(10deg, var(--navBarColor),var(--navBarColor), #1c1c1c);
+  border:none;
+  border-radius:20% 90%;
+
+  
+
+  
+  
+}
+
+.navMenuButtons h1{
+  position:relative;
+  top:-50px;
+
+  font-size:5rem;
+  
+  color:orange;
+  color:blue;
+  white-space:nowrap;
+}
+
+.navMenuButtons i{
+  color:white;
+}
+
+
+
+#navBarMenuButton{
+  position:relative;
+  
+
+  text-align:center;
+
+  display:block;
+  margin:0px auto;
+
+  
+  border:none;
+  
+  width:100%;
+  height:100%;
+
+  background:var(--navBarColor);
+  
+}
+
+#navBarMenuButton i{
+  color:white;
+}
+
+
+
+
+
+.sectionPfpDiv{
+  position:relative;
+  top:200px;
+
+  width:700px;
+  height:700px;
+
+  border-radius:50% 25%;
+
+  opacity:var(--sectionPfpOpacity);
+
+  background:var(--pfpImageUrl);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+.sectionTextDiv{
+  position:relative;
+  
+  top:-650px;
+  left:10vw;
+
+  text-align: center;
+
+  width:80vw;
+  height:800px;
+  
+  background:none;
+
+  display:block;
+  
+}
+
+
+
+
+
+.sectionTextTitleTags{
+  position:relative;
+  color:green;
+  
+  font-size:2.5rem;
+
+  text-shadow:2px 5px 5px blue;
+
+  
+}
+
+
+.sectionTextAboutMe{
+  position:relative;
+
+  font-size:3rem;
+
+  text-align:end;
+
+  color:orange;
+}
+
+.sectionTextAboutMe .greetingSpan{
+  
+  color:var(--darkTextColor);
+}

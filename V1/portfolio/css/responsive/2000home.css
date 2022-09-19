@@ -1,0 +1,39 @@
+
+
+@media all and (min-width:2000px){
+
+    #homeContainer .sectionPfpDiv{
+      position:relative;
+      top:200px;
+    
+      width:700px;
+      height:700px;
+    
+      border-radius:50% 25%;
+    
+      opacity:var(--sectionPfpOpacity);
+    
+      background:var(--pfpImageUrl);
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+
+
+    #homeContainer .sectionTextDiv{
+      position:relative;
+      
+      top:-350px;
+      left:12.5vw;
+    
+      text-align: center;
+    
+      width:75vw;
+      height:400px;
+      
+      background:none;
+    
+      display:block;
+      
+    }
+
+}

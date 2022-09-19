@@ -1,0 +1,374 @@
+    
+    
+    
+    
+@media all and (min-width:2000px){
+      
+    
+      
+    
+    :root{
+    
+      --device: "pc2000";
+      --pfpImageUrl: url("https://images-ext-1.discordapp.net/external/5E1X1NyA8jy7WDK4YNAifF7S39mY3yni3Y0BzhAY5lg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/564452749425639483/499dba7f4169ec65c13b5af6f5c524f0.webp");
+      --darkModeBackground: #1c1c1c;
+      --darkModeOppositeBackground: #E1D9D1;
+      --darkTextColor: white;
+      --navBarColor: #0042aa;
+      --navBarColor: rgb(113,126,255);
+      --sectionPfpOpacity:0.5;
+      
+      
+      
+    }
+
+    
+    
+    
+    h1{
+      font-family:monospace, monospace;
+      color:white;
+      font-size:5rem;
+    }
+    
+    p{
+      font-family:monospace, monospace;
+      color:black;
+      font-size:3rem;
+    }
+    
+    button:hover{
+      cursor:pointer;
+    }
+    
+    
+    
+    #mainContainer{
+      position:fixed;
+      top:0px;
+      left:0px;
+      
+      width:100vw;
+      height:100vh;
+    
+      background:var(--darkModeBackground);
+      
+    }
+    
+    
+    canvas {
+      position:relative;
+      top:250px;
+      left:0px;
+      z-index:9000;
+    }
+    
+    #homeCanvas{
+      position:relative;
+      top:200px;
+      
+    }
+    
+    #projectsCanvas{
+    }
+    
+    #experienceCanvas{
+    }
+    
+    #contactsCanvas{
+    }
+    
+    
+    
+    
+    #homeContainer{
+      position:fixed;
+      top:100px;
+      left:0px;
+      
+      width:100vw;
+      height:100vh;
+    
+      overflow:hidden;
+      overflow-y:auto; 
+      
+      background:var(--darkModeBackground);
+      
+      display:block;
+      
+    }
+    
+    
+    #projectsContainer{
+      position:fixed;
+      top:100px;
+      left:0px;
+      
+      width:100vw;
+      height:100vh;
+    
+      
+      overflow:hidden;
+      overflow-y:auto; 
+    
+      background:var(--darkModeBackground);
+    
+      display:none;
+      
+    }
+    
+    
+    #experienceContainer{
+      position:fixed;
+      top:100px;
+      left:0px;
+      
+      width:100vw;
+      height:100vh;
+    
+      overflow:hidden;
+      overflow-y:auto; 
+    
+      background:var(--darkModeBackground);
+    
+      display:none;
+      
+    }
+    
+    
+    #contactsContainer{
+      position:fixed;
+      top:100px;
+      left:0px;
+      
+      width:100vw;
+      height:100vh;
+    
+      overflow:hidden;
+      overflow-y:auto; 
+    
+      background:var(--darkModeBackground);
+    
+      display:none;
+      
+    }
+    
+    
+    
+    #footerDiv{
+      position:relative;
+      top:20px;
+      display:none;
+      
+      
+      width:100vw;
+      height:400px;
+    
+      background:white;
+    }
+    
+    
+    #navBar{
+      position:fixed;
+      top:0px;
+      left:0px;
+    
+      
+      width:100vw;
+      height:100px;
+    
+      background:white;
+      z-index:200;
+    
+      
+      
+    }
+    
+    
+    #navMenu{
+    
+      position:fixed;
+      top:-200vh;
+      
+      left:0px;
+    
+      
+      width:100vw;
+      height:100vh;
+    
+      background:var(--navBarColor);
+      z-index:150;
+    }
+    
+    
+    #navMenuSettingsDiv{
+      position:relative;
+      top:100px;
+      
+      width:100%;
+      height:150px;
+    
+      background:white;
+      background:none;
+    }
+    
+    
+    .navMenuSettingsDivButtons{
+      position:relative;
+    
+      display:block;
+      margin:auto;
+    
+      border:none;
+      
+      width:80px;
+      height:80%;
+    
+      background:none;
+    
+      
+    }
+    
+    .navMenuSettingsDivButtons h1{
+      color:blue;
+    }
+    
+    
+    .navMenuButtons{
+      position:relative;
+      margin-top:1%;
+      margin-left:2%;
+      left:5%;
+      top:5%;
+    
+      text-align:center;
+      
+      width:45%;
+      height:8%;
+    
+      background:linear-gradient(10deg, var(--navBarColor),var(--navBarColor), #1c1c1c);
+      border:none;
+      border-radius:20% 90%;
+    
+      
+    
+      
+      
+    }
+    
+    .navMenuButtons h1{
+      position:relative;
+      top:-50px;
+    
+      font-size:3rem;
+      
+      white-space:nowrap;
+    }
+    
+    .navMenuButtons i{
+      color:white;
+    }
+    
+    
+    
+    #navBarMenuButton{
+      position:relative;
+      
+    
+      text-align:center;
+    
+      display:block;
+      margin:0px auto;
+    
+      
+      border:none;
+      
+      width:100%;
+      height:100%;
+
+      font-size:5rem;
+    
+      background:var(--navBarColor);
+      
+    }
+    
+    #navBarMenuButton h1{
+      color:white;
+      font-size:2.5rem;
+    }
+    
+    
+    
+    
+    
+    .sectionPfpDiv{
+      position:relative;
+      top:200px;
+    
+      width:400px;
+      height:400px;
+    
+      border-radius:50% 25%;
+    
+      opacity:var(--sectionPfpOpacity);
+    
+      background:var(--pfpImageUrl);
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+    
+    
+    .sectionTextDiv{
+      position:relative;
+      
+      top:-350px;
+      left:0vw;
+    
+      text-align: center;
+    
+      width:50vw;
+      height:400px;
+      
+      background:none;
+    
+      display:block;
+      
+    }
+    
+    
+    
+    
+    
+    .sectionTextTitleTags{
+      position:relative;
+      color:green;
+      
+      font-size:2.5rem;
+    
+      text-shadow:2px 5px 5px blue;
+    
+      
+    }
+    
+    
+    .sectionTextAboutMe{
+      position:relative;
+    
+      font-size:3rem;
+    
+      text-align:end;
+    
+      color:orange;
+    }
+    
+    .sectionTextAboutMe .greetingSpan{
+      
+      color:var(--darkTextColor);
+    }
+      
+
+
+
+
+
+}

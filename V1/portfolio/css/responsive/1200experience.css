@@ -1,0 +1,191 @@
+    
+
+@media all and (min-width:1200px){
+    
+    #experienceMediasDiv{
+      position:relative;
+      top:-200px;
+    
+      
+      width:50vw;
+      height:auto;
+      padding-bottom:100px;
+    
+      background:white;
+      background:none;
+     
+    }
+    
+    
+    .experienceMediaSectionTitles{
+      position:relative;
+      text-align:center;
+    
+      font-size:2rem;
+    
+      color:var(--darkTextColor);
+    }
+
+    .experienceMediaSectionTitles:nth-child(3){
+      
+      position:absolute;
+      top:-35vh;
+      right:-30vw;
+      
+    }
+    
+    #allExperienceSkills{
+      position:relative;
+      align-items:center;
+      justify-content:center;
+
+      width:50vw;
+      
+      display:grid;
+      grid-template-columns:repeat(3, 150px);
+      
+      grid-gap:20px;
+    
+      margin-bottom:70px;
+
+      background:none;
+    
+    
+    }
+    
+    
+    
+    
+    .allExperienceDivObject{
+      position:relative;
+      
+      height:150px;
+      width:100%;
+    
+      margin-right:50px;
+      
+      
+    
+      background:none;
+    }
+    
+    .allExperienceObjectImage{
+      position:relative;
+      
+      width:50%;
+      height:50%;
+    
+      
+      margin-left:25%;
+      margin-top:20px;
+      
+      
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+    
+    
+    .allExperienceObjectName{
+      position:relative;
+    
+      margin-top:5px;
+      text-align:center;
+    
+      font-size:1.7rem;
+    
+      color:green;
+      text-shadow:2px 2px 5px blue;
+    }
+    
+    #experienceTimeline{
+      position:absolute;
+      top:-20vh;
+      right:-100%;
+    
+      width:50vw;
+      height:90%;
+      
+      
+    
+      background:none;
+    }
+    
+    #timelineSvgDiv{
+      position:relative;
+  
+      display:flex; 
+      align-items:center; 
+      justify-content:center;
+    
+      width:25%;
+      height:100%;
+    
+      
+      left:25%;
+    
+    
+      background:none;
+    }
+    
+    #timelineElementsDiv{
+      position:relative; 
+      top:-120%;
+      
+      width:100%; 
+      height:100%; 
+    
+      display:grid;
+      grid-template-columns:100%;
+
+      align-content:start;
+      justify-items:start;
+
+      
+      
+       
+    
+      background:none;
+    }
+    
+    
+    .timelineButton{
+      position:relative; 
+      top:170px;
+      left:30%; 
+      
+      width:auto;
+      height:40px; 
+    
+      border-radius:50px;
+      border:2px solid cyan;
+     
+      
+    
+      
+      
+      
+      
+      
+      text-align:center;
+    }
+    
+    .timelineButtonText{
+    
+      font-size:1rem;
+    }
+    
+    .timelineYear{
+      position:relative;
+      top:200px;
+      left:100px;
+      
+      text-align:center;
+
+      font-size:1.5rem;
+      
+      
+      color:var(--darkTextColor);
+      
+    }
+
+}

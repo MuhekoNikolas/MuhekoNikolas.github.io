@@ -1,0 +1,291 @@
+<DOCTYPR html>
+	<html>
+
+	<head>
+		<link rel="stylesheet" href="../portfolio/css/newPageDefault.css">
+		<link rel="stylesheet" href="../portfolio/css/contactsContainerDefault.css">
+		<link rel="stylesheet" href="../portfolio/css/experienceContainerDefault.css">    
+		<link rel="stylesheet" href="../portfolio/css/projectsContainerDefault.css">
+
+
+    <link rel="stylesheet" href="../portfolio/css/responsive/1200main.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/1200home.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/1200experience.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/1200projects.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/1200contacts.css">
+    
+    <link rel="stylesheet" href="../portfolio/css/responsive/2000Main.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/2000home.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/2000projects.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/2000experience.css">
+    <link rel="stylesheet" href="../portfolio/css/responsive/2000contacts.css">
+    
+		<script src="https://kit.fontawesome.com/49ac55f315.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.3525nikolas.repl.co/p51"></script>
+		<script src="https://cdn.3525nikolas.repl.co/p52"></script>
+		<script src="https://cdn.3525nikolas.repl.co/p53"></script>
+		<script src="https://cdn.3525nikolas.repl.co/matter1"></script>
+	</head>
+
+	<body onload="runStartUpFunctions()">
+		<div id="mainContainer">
+			<div id="navBar">
+				<button id="navBarMenuButton" onclick="showOrHideMenu()">
+					<h1>
+              <i class="fa fa-bars"></i>
+            </h1> </button>
+			</div>
+			<div id="navMenu" onclick="showOrHideMenu()">>
+				<button class="navMenuButtons" onclick='showHomeContainer()'>
+					<h1>
+              <i class="fa fa-home"></i> Home
+            </h1> </button>
+				<button class="navMenuButtons" onclick="showProjectsContainer()">
+					<h1>
+              <i class="fa fa-book"></i> Projects
+            </h1> </button>
+				<button class="navMenuButtons" onclick="showExperienceContainer()">
+					<h1>
+              <i class="fa fa-lightbulb"></i> Experience
+            </h1> </button>
+				<button class="navMenuButtons" onclick="showContactsContainer()">
+					<h1>
+              <i class="fa fa-phone"></i> Contacts
+            </h1> </button>
+				<div id="navMenuSettingsDiv">
+					<button class="navMenuSettingsDivButtons" onclick="changeTheme()">
+						<h1>
+                <i class="fa fa-sun"></i>
+              </h1> </button>
+				</div>
+			</div>
+			<div id="homeContainer">
+				<div class="sectionPfpDiv"></div>
+				<div class="sectionTextDiv">
+					<p class="sectionTextTitleTags"> &ltabout-me&gt </p>
+					<p class="sectionTextAboutMe"> <span class="greetingSpan">Hello there! </span>
+						<br></br> <span>
+            I will be your guide for this session, my name is Muheko Nikolas, I am a 16 year old full stack developer with a bad taste of UI designing but a huge love for code. 
+
+            </span> </p>
+					<p class="sectionTextTitleTags"> &lt/about-me&gt </p>
+				</div>
+				<div id="footerDiv"> </div>
+			</div>
+			<div id="projectsContainer">
+				<div class="sectionPfpDiv"></div>
+				<div class="sectionTextDiv">
+					<p class="sectionTextTitleTags"> &ltmy-projects&gt </p>
+					<p class="sectionTextAboutMe"> <span class="greetingSpan">Yes Mom! Oh good gracious... Didn't see you there! </span>
+						<br></br> <span>
+            Here,  I have kept this page full of all the projects I had fun working on. Surely one of them might catch your eyes... 
+
+            </span> </p>
+					<p class="sectionTextTitleTags"> &lt/my-projects&gt </p>
+				</div>
+				<div id="myProjectsDiv">
+					<!--AUTO GENERATED DIVS-->
+					<div class="myProjectsBox fa-beat" style="--fa-beat-scale: 0.95;">
+						<div class="myProjectBoxText">
+							<h1 class="myProjectBoxTextHeader">Joe Biden <i class="fa-solid fa-robot fa-bounce"></i> </h1>
+							<p class="myProjectBoxTextBio">A verified discord bot with alot of features.</p>
+						</div>
+						<div class="myProjectBoxOptions">
+							<button class="myProjectBoxOptionsButton" style="background:red;" onclick="redirectTo('https://replit.com/@JoeBidenBot/JoeBiden-1')">
+								<h1> <i class="fa-solid fa-code"></i> </h1> </button>
+							<button class="myProjectBoxOptionsButton" style="background:green;" onclick="redirectTo('https://discord.com/oauth2/authorize?client_id=739799370907779092&amp;permissions=2134207679&amp;scope=bot%20applications.commands')">
+								<h1> <i class="fa-solid fa-eye"></i> </h1> </button>
+						</div>
+					</div>
+					<div class="myProjectsBox fa-beat" style="--fa-beat-scale: 0.95;">
+						<div class="myProjectBoxText">
+							<h1 class="myProjectBoxTextHeader">Cuesser <i class="fa-solid fa-gamepad fa-bounce"></i> </h1>
+							<p class="myProjectBoxTextBio">A dynamic guessing game where you decide what level you want</p>
+						</div>
+						<div class="myProjectBoxOptions">
+							<button class="myProjectBoxOptionsButton" style="background:red;" onclick="redirectTo('https://replit.com/@3525Nikolas/p5-js-goat-game')">
+								<h1> <i class="fa-solid fa-code"></i> </h1> </button>
+							<button class="myProjectBoxOptionsButton" style="background:green;" onclick="redirectTo('https://p5-js-goat-game.3525nikolas.repl.co')">
+								<h1> <i class="fa-solid fa-eye"></i> </h1> </button>
+						</div>
+					</div>
+					<div class="myProjectsBox fa-beat" style="--fa-beat-scale: 0.95;">
+						<div class="myProjectBoxText">
+							<h1 class="myProjectBoxTextHeader">Synth <i class="fa-solid fa-robot fa-bounce"></i> </h1>
+							<p class="myProjectBoxTextBio">A discord bot made by <span onclick="redirectTo(`https://co-existent.github.io`)" style="color:blue; cursor:pointer;">Terrence</span>, contributed to by debugging and tranferring to an easier way of managing commands.</p>
+						</div>
+						<div class="myProjectBoxOptions">
+							<button class="myProjectBoxOptionsButton" style="background:red;" onclick="redirectTo('https://replit.com/@Pianoidol/Synth?v=1')">
+								<h1> <i class="fa-solid fa-code"></i> </h1> </button>
+							<button class="myProjectBoxOptionsButton" style="background:green;" onclick="redirectTo('https://discord.com/oauth2/authorize?client_id=940163209011277874&amp;permissions=2134207679&amp;scope=bot%20applications.commands')">
+								<h1> <i class="fa-solid fa-eye"></i> </h1> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="experienceContainer">
+				<div class="sectionPfpDiv"></div>
+				<div class="sectionTextDiv">
+					<p class="sectionTextTitleTags"> &ltexperience&gt </p>
+					<p class="sectionTextAboutMe"> <span class="greetingSpan">Lorem! </span>
+						<br></br> <span>Well... Besides playing the guitar and gaming, I do love learning and practicing new frameworks and languages. Take a look at what I have mastered so-far
+            
+
+            </span> </p>
+					<p class="sectionTextTitleTags"> &lt/experience&gt </p>
+				</div>
+				<div id="experienceMediasDiv">
+					<h1 class="experienceMediaSectionTitles">Known frameworks and languages</h1>
+					<div id="allExperienceSkills">
+						<!--AUTO GENERATED DIVS-->
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg);"></div>
+							<p class="allExperienceObjectName">CSS3</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg);"></div>
+							<p class="allExperienceObjectName">Express JS</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg);"></div>
+							<p class="allExperienceObjectName">Flask</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg);"></div>
+							<p class="allExperienceObjectName">HTML5</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg);"></div>
+							<p class="allExperienceObjectName">JavaScript</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg);"></div>
+							<p class="allExperienceObjectName">Node JS</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg);"></div>
+							<p class="allExperienceObjectName">Python</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://media.discordapp.net/attachments/916795140943802368/988402562912878632/IMG_0375.png);"></div>
+							<p class="allExperienceObjectName">nedb database</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://media.discordapp.net/attachments/916795140943802368/988420211646537778/icon-256x256-removebg-preview.png);"></div>
+							<p class="allExperienceObjectName">p5js</p>
+						</div>
+						<div class="allExperienceDivObject">
+							<div class="allExperienceObjectImage fa-bounce" style="background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg);"></div>
+							<p class="allExperienceObjectName">sql database</p>
+						</div>
+					</div>
+					<h1 class="experienceMediaSectionTitles">Timeline</h1>
+					<div id="experienceTimeline">
+						<div id="timelineSvgDiv">
+							<svg width="100%" height="100%" viewBox="0,0,100,100" preserveAspectRatio="none">
+								<polyline points="50,0 50,600" style="fill:white; stroke:orange; stroke-width:5;"></polyline>
+							</svg>
+						</div>
+						<div id="timelineElementsDiv">
+							<p class="timelineYear">2019</p>
+							<button class="timelineButton" style="border:2px solid blue; background:cyan;">
+								<h1 class="timelineButtonText">Genesis</h1> </button>
+							<p class="timelineYear">2020</p>
+							<button class="timelineButton" style="border:2px solid blue; background:cyan;">
+								<h1 class="timelineButtonText">Formal coding</h1> </button>
+							<p class="timelineYear">2021</p>
+							<button class="timelineButton" style="border:2px solid cyan; background:blue;">
+								<h1 class="timelineButtonText">Frixion</h1> </button>
+							<p class="timelineYear">2022</p>
+							<button class="timelineButton" style="border:2px solid blue; background:cyan;">
+								<h1 class="timelineButtonText">Frontend</h1> </button>
+							<button class="timelineButton" style="border:2px solid blue; background:cyan;">
+								<h1 class="timelineButtonText">Backend</h1> </button>
+							<button class="timelineButton" style="border:2px solid blue; background:cyan;">
+								<h1 class="timelineButtonText">Duo Backend</h1> </button>
+							<button class="timelineButton" style="border:2px solid blue; background:cyan;">
+								<h1 class="timelineButtonText">Databases</h1> </button>
+							<button class="timelineButton" style="border:2px solid blue; background:cyan;">
+								<h1 class="timelineButtonText">Formal Coding</h1> </button>
+							<button class="timelineButton" style="border:2px solid blue; background:green;">
+								<h1 class="timelineButtonText">Current</h1> </button>
+						</div>
+					</div>
+					<!--AUTO GENERATED DIVS-->
+				</div>
+			</div>
+			<div id="contactsContainer">
+				<div class="sectionPfpDiv"></div>
+				<div class="sectionTextDiv">
+					<p class="sectionTextTitleTags"> &ltcontact-me&gt </p>
+					<p class="sectionTextAboutMe"> <span class="greetingSpan">Ahoy once again! </span>
+						<br></br> <span>
+            It looks like its time for our farewells, I had fun having you here, but good things always come to an end. Below I have attached afew means of communication which can be used to access me 😀. I will be waiting for your message!
+
+            </span> </p>
+					<p class="sectionTextTitleTags"> &lt/contact-me&gt </p>
+				</div>
+				<div id="contactsMediasDiv">
+					<!--AUTO GENERATED DIVS-->
+					<div class="contactsMediaBox" style="transform: scale(0);">
+						<div class="contactsDisplayAvatar"></div>
+						<div class="contactsMediaPfp" style="background-image: url(&quot;https://media.discordapp.net/attachments/916795140943802368/980303829587337246/image0.jpg&quot;);"></div>
+						<div class="contactsMediaTextDiv">
+							<h1 class="contactsMediaTextDivUserName">@3525Nikolas</h1>
+							<p class="contactsMediaTextDivSiteName">replit</p>
+						</div>
+						<button onclick="redirectTo(url='https://replit.com/@3525Nikolas')" class="contactsMediaBoxContactButton">
+							<h1><i class="fa fa-letter"></i>Contact Me</h1></button>
+					</div>
+					<div class="contactsMediaBox" style="transform: scale(0);">
+						<div class="contactsDisplayAvatar"></div>
+						<div class="contactsMediaPfp" style="background-image: url(&quot;https://media.discordapp.net/attachments/916795140943802368/980303829587337246/image0.jpg&quot;);"></div>
+						<div class="contactsMediaTextDiv">
+							<h1 class="contactsMediaTextDivUserName">@joebidenbot</h1>
+							<p class="contactsMediaTextDivSiteName">replit</p>
+						</div>
+						<button onclick="redirectTo(url='https://replit.com/@joebidenbot')" class="contactsMediaBoxContactButton">
+							<h1><i class="fa fa-letter"></i>Contact Me</h1></button>
+					</div>
+					<div class="contactsMediaBox" style="transform: scale(0);">
+						<div class="contactsDisplayAvatar"></div>
+						<div class="contactsMediaPfp" style="background-image: url(&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png&quot;);"></div>
+						<div class="contactsMediaTextDiv">
+							<h1 class="contactsMediaTextDivUserName">@mxrningster</h1>
+							<p class="contactsMediaTextDivSiteName">instagram</p>
+						</div>
+						<button onclick="redirectTo(url='https://www.instagram.com/mxrningster/')" class="contactsMediaBoxContactButton">
+							<h1><i class="fa fa-letter"></i>Contact Me</h1></button>
+					</div>
+					<div class="contactsMediaBox" style="transform: scale(0);">
+						<div class="contactsDisplayAvatar"></div>
+						<div class="contactsMediaPfp" style="background-image: url(&quot;https://www.svgrepo.com/show/331368/discord-v2.svg&quot;);"></div>
+						<div class="contactsMediaTextDiv">
+							<h1 class="contactsMediaTextDivUserName">@nikolipo#2300</h1>
+							<p class="contactsMediaTextDivSiteName">discord</p>
+						</div>
+						<button onclick="redirectTo(url='https://discord.gg/program')" class="contactsMediaBoxContactButton">
+							<h1><i class="fa fa-letter"></i>Contact Me</h1></button>
+					</div>
+					<div class="contactsMediaBox" style="transform: scale(0);">
+						<div class="contactsDisplayAvatar"></div>
+						<div class="contactsMediaPfp" style="background-image: url(&quot;https://media.discordapp.net/attachments/916795140943802368/980305685399089252/IMG_0335.png&quot;);"></div>
+						<div class="contactsMediaTextDiv">
+							<h1 class="contactsMediaTextDivUserName">Joe Biden</h1>
+							<p class="contactsMediaTextDivSiteName">discord bot</p>
+						</div>
+						<button onclick="redirectTo(url='https://discord.com/oauth2/authorize?client_id=739799370907779092&amp;permissions=2134207679&amp;scope=bot%20applications.commands')" class="contactsMediaBoxContactButton">
+							<h1><i class="fa fa-letter"></i>Contact Me</h1></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../portfolio/js/defineVariables.js"></script>
+	<script src="../portfolio/js/home.js"></script>
+	<script src="../portfolio/js/generatingItems.js"></script>
+	<script src="../portfolio/js/scrollAnimations.js"></script>
+	<script src="../portfolio/js/dynamicChangingItems.js"></script>
+	<script src="../portfolio/js/sketches/homeSketch.js"></script>
+
+	</html>
