@@ -1,0 +1,176 @@
+
+
+@media screen and (min-width:950px){
+    
+    #wrapper{
+        background:none;
+    }
+    
+    
+    #navBar{  
+        width:70vw;
+        height:70px;
+    
+        margin-left:15vw;
+
+    }
+    
+    #aboutMe{
+        top:0px;
+    
+        width:95vw;
+        height:200px;
+    
+        margin:auto;
+        margin-bottom:200px;
+    
+        z-index:6;
+    
+        background:none;
+    }
+
+    #projectsSection{
+        height:500px;
+    }
+
+    #experienceSection{
+        height:600px;
+    }
+    
+    #bioSection{
+        height:auto;
+    }
+
+    #footerSection{
+        height:100px;
+    }
+
+
+    #aboutMe h2{
+        font-size:60px;
+
+        margin-bottom:-20px;
+    }
+    
+    
+    #aboutMe h1{
+
+        font-size:8rem;
+        margin-bottom:-50px;
+        font-family:'League Spartan';
+    }
+    
+
+    .sectionTitle{
+        top:-50px;
+        font-size:50px;
+        color:white;  
+    }
+
+
+
+    #projectSlideshow{
+        top:-70px;
+    
+        width:70vw;
+        height:500px;
+    }
+    
+    .project{
+        top:-10px;
+        
+        width:70%;
+        height:450px;
+    }
+    
+    .projectSlideButtons{
+        top:-10px;
+        height:460px;
+    }
+    
+    .prevButton{
+        border-radius:20px 5px 5px 20px;
+    }
+    
+    .nextButton{
+        border-radius:5px 20px 20px 5px;
+    
+    }
+
+
+    
+    .experienceGrid{
+        grid-template-columns:repeat(4, 150px);
+        grid-column-gap:50px;
+        
+        background:none;
+    
+    }
+    
+    .experienceGrid div{
+        width:70%;
+        height:105px;
+    }
+    
+    #bioSection h2{
+        width:70vw;
+    
+        font-size:2rem;
+    }
+
+    
+    
+    #contactSection div{
+        margin-top:80px;
+
+        width:550px;
+        
+        background:none;
+    }
+
+    #contactSection *{
+        margin-top:40px;
+    }
+    
+    #contactSection div *{
+            font-size:1.5rem;
+    }
+    
+    #contactSection div input{
+        width:250px;
+        height:40px;
+    
+        margin:10px auto;
+
+        border-radius:10px;
+    }
+    
+    .nameInput{
+    }
+    
+    .emailInput{
+        width:300px !important;
+    }
+    
+    .messageInput{
+        width:550px;
+        height:250px;
+    
+        margin:auto;
+        margin-top:-10px;
+    }
+    
+    .submitButton{
+        width:150px;
+        height:40px;
+    
+        margin:-5px 10px 0px auto;
+    
+        font-size:15px !important;
+        font-weight:bold;
+        border-radius:10px;
+    }
+
+
+}
+
