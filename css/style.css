@@ -110,6 +110,22 @@ button, a{
     background:var(--purple);
 }
 
+#timelineSection{
+    position:relative;
+    
+    width:100vw;
+    height:1000px;
+
+    margin:auto;
+    margin-top:-100px;
+
+    z-index:3;
+
+    
+
+    background:var(--purple);
+}
+
 #bioSection{
     position:relative;
     
@@ -330,8 +346,90 @@ button, a{
 
     box-shadow:inset 5px 5px 10px #a280ff, 5px 5px 14px black; /*/#4400ff;/*/
 
+    padding:20px;
+
     background:var(--purple);
 }
+
+
+
+.timelineDiv{
+    position:relative;
+    top:50px;
+
+    width:800px;
+    height:900px;
+
+    margin:auto;
+
+    justify-content:center;
+    
+    background:none;
+
+}
+
+    
+.timelineDiv::before{
+    position:absolute;
+    transform:translate(390px,0px);
+
+    width:20px;
+    height:100%;
+    
+    content:"";
+
+    box-shadow:inset 5px 5px 10px #a280ff, 5px 5px 14px black;
+
+    z-index:-1;
+    
+    background:var(--purple);
+}
+
+.timelineDiv::after{
+    position:absolute;
+    top:0px;
+    left:375px;
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+    
+    content:"";
+
+    box-shadow:inset 5px 5px 10px #a280ff, 5px 5px 14px black;
+
+    z-index:-1;
+    
+    background:var(--purple);
+}
+
+
+
+.timelineDiv .yearDiv{
+    position:relative;
+    top:50px;
+    
+    width:160px;
+    height:75px;
+
+    font-size:75px;
+    color:white;
+    text-align:center;
+
+    border-radius:5px;
+
+    box-shadow:inset 5px 5px 10px #a280ff, 5px 5px 14px black; /*/#4400ff;/*/
+
+    margin:auto;
+    margin-top:0px;
+
+    z-index:100 !important;
+
+    background:var(--purple);
+}
+
+
 
 #bioSection h2{
     position:relative;
