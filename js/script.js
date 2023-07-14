@@ -1,4 +1,4 @@
-
+location.href = "https://muheko.ml"
 
 function scrollToContactSection(){
     contactSection.scrollIntoView({
