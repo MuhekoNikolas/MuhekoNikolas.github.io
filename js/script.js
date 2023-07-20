@@ -1,4 +1,4 @@
-location.href = "https://muheko.ml"
+location.href = "https://portfolio.3525nikolas.repl.co"
 
 function scrollToContactSection(){
     contactSection.scrollIntoView({
