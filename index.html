@@ -24,12 +24,35 @@
             height:60px;
         }
 
+
+        .redirectContainer{
+          position:fixed;
+          top:0px;
+          left:0px;
+
+          z-index:11111111111;
+
+          width:100vw;
+          height:100vh;
+
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          
+          background:black;
+        }
+
         
         
     </style>
 </head>
 
 <body>
+    <div class="redirectContainer">
+      <h3 class="redirectHeader">You are being redirected to the portfolio web page!</h3>
+      <h4 class="redirectAnchor">If not redirected automatically, <a href="https://portfolio.3525nikolas.repl.co">click here.</a></h4>
+    </div>
     <div id="wrapper">
         <!--
         <div id="pallete">
